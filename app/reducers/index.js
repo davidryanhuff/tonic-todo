@@ -9,7 +9,6 @@ const initialState = {
 }
 
 const addTodo = (state, { payload }) => {
-  console.log('payload = ', payload)
   return Object.assign({}, state, {
     todos: [
       ...state.todos,
@@ -23,7 +22,6 @@ const addTodo = (state, { payload }) => {
 }
 
 const toggleTodo = (state, { payload }) => {
-  console.log('payload = ', payload)
   return Object.assign({}, state, {
     todos: state.todos.map((todo) => {
       if (todo.id === payload) {
@@ -37,14 +35,12 @@ const toggleTodo = (state, { payload }) => {
 }
 
 const deleteTodo = (state, { payload }) => {
-  console.log('payload = ', payload)
   return Object.assign({}, state, {
     todos: state.todos.filter(({ id }) => id !== payload)
   })
 }
 
 const editTodo = (state, { payload }) => {
-  console.log('payload = ', payload)
   return Object.assign({}, state, {
     todos: state.todos.map((todo) => {
       if (todo.id === payload.id) {

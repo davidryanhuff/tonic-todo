@@ -12,7 +12,6 @@ class EditTodo extends Component {
   }
 
   handleChange (e) {
-    console.log(e.target.value)
     this.setState({text: e.target.value})
   }
 
