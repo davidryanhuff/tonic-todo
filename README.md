@@ -2,9 +2,9 @@
 A React / Redux todo app inspired by Tonic. Styles organized using Atomic Design / ITCSS
 
 ## Getting Started
-`npm start` - runs webpack-dev-server for local development
-`npm run build` - creates production ready `dist/` folder
-`npm serve` - runs small express `server.js` in `dist/`
+* `npm start` - runs webpack-dev-server for local development
+* `npm run build` - creates production ready `dist/` folder
+* `npm serve` - runs small express `server.js` in `dist/`
 
 ## Built with
 * `react` (http://reactjs.org/)
