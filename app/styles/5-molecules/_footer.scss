@@ -1,0 +1,13 @@
+.footer {
+    background-color: $gray0;
+    padding: 1rem 0;
+    color: $white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    &__title {
+        font-size: 12px;
+    }
+}

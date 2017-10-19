@@ -1,0 +1,53 @@
+.todo {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid $gray4;
+    cursor: pointer;
+
+    .input-group-addon {
+        border: none;
+    }
+
+    &__text {
+        display: inline-block;
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        transition: background-color 0.33s;
+        border-bottom-left-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+    }
+
+    &__edit,
+    &__delete {
+        opacity: 0;
+        transition: opacity 0.33s;
+        outline: none;
+    }
+
+    // On todo hover
+    &:hover {
+
+        .todo__text {
+            background-color: #f2f2f2;
+        }
+
+        .todo__delete,
+        .todo__edit {
+            opacity: 1;
+        }
+    
+        .todo__delete {
+            &:hover {
+                color: $red;
+                cursor: pointer;
+            }
+        }
+    
+        .todo__edit {
+            &:hover {
+                color: $teal;
+                cursor: pointer;
+            }
+        }
+    }
+}

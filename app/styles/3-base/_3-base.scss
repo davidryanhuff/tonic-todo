@@ -1,0 +1,20 @@
+// ----------------------------------------------------------
+// 3-BASE: ground zero styles, unclassed HTML elements, type selectors: no classes
+// ----------------------------------------------------------
+
+html,
+body {
+    font-family: $primary-font-family;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: $secondary-font-family;
+}

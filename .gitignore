@@ -1,0 +1,34 @@
+.DS_STORE
+.DS_Store?
+.module-cache
+
+node_modules
+dist/
+
+# Css/Sass Files
+.sass-cache/
+*.css.map
+
+# Logs
+logs
+*.log
+*.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Text Editors
+*.sublime-project
+*.sublime-workspace
+.vscode
+*.idea
+.idea
