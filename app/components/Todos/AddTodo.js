@@ -29,7 +29,7 @@ class AddTodo extends Component {
     return (
       <form onSubmit={this.handleSubmit} className='add-todo-form'>
         <input
-          ref={(input) => { this.addTodoInput = input; }} 
+          ref={(input) => this.addTodoInput = input } 
           type='text'
           value={this.state.text}
           onChange={this.handleChange}

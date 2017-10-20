@@ -14,12 +14,9 @@ class TodoContainer extends Component {
   toggleEditMode () {this.setState({ isEditing: !this.state.isEditing })}
 
   render () {
-    const { id, text, completed, toggleTodo, deleteTodo, editTodo } = this.props;
-    const { isEditing } = this.state
-
     return (
       <div>
-          {( isEditing
+          {( this.state.isEditing
                 ? <EditTodo {...this.props} toggleEditMode={this.toggleEditMode} />
                 : <Todo {...this.props} toggleEditMode={this.toggleEditMode} />
           )}
